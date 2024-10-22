@@ -254,7 +254,7 @@ function StatTracker() {
               type="number"
             />
           </FormControl>
-          <Button colorScheme="green" onClick={handleAddGame}
+          <Button onClick={handleAddGame}
                       mt={4}
                       bgColor="#228B22"
                       color="#F5F5DC"
