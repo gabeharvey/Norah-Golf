@@ -1,42 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  font-family: "Gentium Plus", serif;
+  background-color: #F5F5DC;
+}
+
+.zoom-in {
+  animation: zoomIn 0.5s forwards; 
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  font-family: "Gentium Plus", serif;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  background-image: linear-gradient(-45deg, #242525 25%, transparent 25%, transparent 50%, #001f3f 50%, #001f3f 75%, transparent 75%, transparent);
+  background-size: 1px 1px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem; 
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  font-family: "Gentium Plus", serif;
+  color: #F5F5DC; 
+  font-size: 42px;
+  font-weight: bold;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links {
+  font-family: "Gentium Plus", serif;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-item {
+  margin: 0 15px;
 }
 
-.card {
-  padding: 2em;
+.nav-link {
+  font-family: "Roboto+Condensed", system-ui;
+  color: #CC5500; 
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
-.read-the-docs {
-  color: #888;
+.nav-link:hover {
+  color: #F5F5DC; 
+}
+
+.footer {
+  background-color: #228B22; 
+  font-family: "Gentium Plus", serif;
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(-45deg, #228B22 25%, transparent 25%, transparent 50%, #228B22 50%, #228B22 75%, transparent 75%, transparent);
+  background-size: 1px 1px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: wrap; 
+}
+
+.footer-logo {
+  color: #F5F5F5; 
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 100x; 
+}
+
+.footer-nav {
+  flex-grow: 1; 
+}
+
+.footer-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; 
+  margin: 0;
+  padding: 0;
+}
+
+.footer-item {
+  margin: 0 15px;
+}
+
+.footer-link {
+  color: #F5F5F5; 
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #CC5500; 
+}
+
+.tilt-prism-footer {
+  font-family: 'Tilt Prism', serif;
+  font-size: 22px;
+  color: #F5F5F5;
+  font-weight: bold;
 }
