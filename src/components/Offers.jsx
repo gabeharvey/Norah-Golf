@@ -7,7 +7,7 @@ function Offers() {
   const offers = [
     {
       schoolName: "University",
-      logo: "utsa-logo.png", 
+      logo: "texas-logo.png", 
       description: "Full athletic scholarship",
     },
     {
@@ -64,10 +64,10 @@ function Offers() {
               mr={4}
             />
             <Box>
-              <Text color="#000000" fontWeight="bold" fontFamily="'Gentium Plus', serif" fontSize="lg">
+              <Text color="#38393d" fontWeight="bold" fontFamily="'Gentium Plus', serif" fontSize="lg">
                 {offer.schoolName}
               </Text>
-              <Text color="#000000" fontFamily="'Roboto+Condensed', system-ui" fontSize="md" fontWeight="semibold" mt={1}>
+              <Text color="#38393d" fontFamily="'Roboto+Condensed', system-ui" fontSize="md" fontWeight="semibold" mt={1}>
                 {offer.description}
               </Text>
             </Box>

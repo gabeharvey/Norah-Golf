@@ -31,10 +31,10 @@ function VideoCard({ videoSrc, title, description }) {
           />
         </Box>
         <Box p={3} textAlign="center" bgColor="#F5F5F5" h="30%">
-          <Text fontSize="2xl" fontWeight="semibold" color="#000000" fontFamily="'Gentium Plus', serif">
+          <Text fontSize="2xl" fontWeight="semibold" color="#38393d" fontFamily="'Gentium Plus', serif">
             {title}
           </Text>
-          <Text mt={2} fontSize="lg" fontWeight="bold" color="#000000" fontFamily="'Roboto+Condensed', system-ui">
+          <Text mt={2} fontSize="lg" fontWeight="bold" color="#38393d" fontFamily="'Roboto+Condensed', system-ui">
             {description}
           </Text>
         </Box>

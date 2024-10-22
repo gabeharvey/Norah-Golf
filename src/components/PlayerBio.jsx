@@ -36,7 +36,7 @@ function PlayerProfile() {
           bgSize="cover"
           bgPosition="center"
           borderRadius="12px"
-          borderColor="#ebebeb"
+          borderColor="#38393d"
           borderWidth="3px"
           minH="500px"
           minW="350px"
@@ -66,10 +66,10 @@ function PlayerProfile() {
           <Grid gap={4}>
             {player.bioCategories.map((category, index) => (
               <Box key={index} p={3} bgColor="transparent" borderRadius="8px">
-                <Text color="#000000" fontWeight="bold" fontFamily="'Gentium Plus', serif" fontSize="lg">
+                <Text color="#38393d" fontWeight="bold" fontFamily="'Gentium Plus', serif" fontSize="lg">
                   {category.title}
                 </Text>
-                <Text color="#000000" fontFamily="'Roboto+Condensed', system-ui" fontSize="lg" fontWeight="semibold" mt={1}>
+                <Text color="#38393d" fontFamily="'Roboto+Condensed', system-ui" fontSize="lg" fontWeight="semibold" mt={1}>
                   {category.description}
                 </Text>
               </Box>
@@ -82,7 +82,7 @@ function PlayerProfile() {
               aria-label="Facebook"
               icon={<FaFacebookF />}
               variant="ghost"
-              color="#000000" 
+              color="#38393d" 
               fontSize="24px"
               _hover={{ color: '#0056b3' }} 
               _active={{ bg: 'transparent' }}
@@ -94,7 +94,7 @@ function PlayerProfile() {
               aria-label="Instagram"
               icon={<FaInstagram />}
               variant="ghost"
-              color="#000000" 
+              color="#38393d" 
               fontSize="24px"
               _hover={{ color: '#e1306c' }} 
               _active={{ bg: 'transparent' }}
@@ -106,7 +106,7 @@ function PlayerProfile() {
               aria-label="Snapchat"
               icon={<FaSnapchatGhost />}
               variant="ghost"
-              color="#000000" 
+              color="#38393d" 
               fontSize="24px"
               _hover={{ color: '#fffc00' }} 
               _active={{ bg: 'transparent' }}
@@ -118,7 +118,7 @@ function PlayerProfile() {
               aria-label="X"
               icon={<Image src={XLogo} alt="X Logo" boxSize="24px" />}
               variant="ghost"
-              color="#000000" 
+              color="#38393d" 
               _hover={{ color: '#F5F5F5' }} 
               _active={{ bg: 'transparent' }}
               m="1"
@@ -129,7 +129,7 @@ function PlayerProfile() {
               aria-label="YouTube"
               icon={<FaYoutube />}
               variant="ghost"
-              color="#000000" 
+              color="#38393d" 
               fontSize="24px"
               _hover={{ color: '#c4302b' }} 
               _active={{ bg: 'transparent' }}

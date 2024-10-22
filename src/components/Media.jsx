@@ -10,7 +10,7 @@ function Media() {
       url: "https://news4sanantonio.com",
     },
     {
-      title: "Norah Castillo Hits a Hole in One",
+      title: "Norah Castillo Gives Back to Community",
       url: "https://news4sanantonio.com",
     },
   ];
@@ -42,7 +42,7 @@ function Media() {
             <Link
               href={article.url}
               isExternal
-              color="#000000"
+              color="#38393d"
               fontWeight="bold"
               fontSize="lg" 
               p={3} 
