@@ -13,8 +13,8 @@ function PlayerProfile() {
     name: "Player Bio", 
     bioCategories: [
       { title: "Class", description: "2029" },
-      { title: "Position", description: "Pitcher/CF" },
-      { title: "Height", description: "5'5\"" },
+      { title: "Style", description: "Scrambler" },
+      { title: "Height", description: "5'4\"" },
       { title: "Weight", description: "115 lbs" },
       { title: "Place of Birth", description: "San Antonio, TX" },
       { title: "High School", description: "Health Careers" },
