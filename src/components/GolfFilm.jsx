@@ -78,7 +78,7 @@ function GolfFilm() {
       {
         videoSrc: "../video7.mp4",
         title: "Norah Championship Round",
-        description: "Highlights from the Finals",
+        description: "Highlights from Finals",
       },
       {
         videoSrc: "../video8.mp4",
