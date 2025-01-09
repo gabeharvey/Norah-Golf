@@ -1,21 +1,21 @@
-import { Box, Text, VStack, Heading, Flex, Image } from '@chakra-ui/react';
+import { Box, Text, VStack, Heading, Flex } from '@chakra-ui/react'; // Add Image Import when adding offer
 import { motion } from 'framer-motion';
 
 const MotionBox = motion.create(Box);
 
 function Offers() {
-  const offers = [
-    {
-      schoolName: "University",
-      logo: "texas-logo.png", 
-      description: "Full athletic scholarship",
-    },
-    {
-      schoolName: "College",
-      logo: "utsa-logo.png",
-      description: "Full athletic scholarship",
-    },
-  ];
+  // const offers = [
+  //   {
+  //     schoolName: "University",
+  //     logo: "texas-logo.png", 
+  //     description: "Full athletic scholarship",
+  //   },
+  //   {
+  //     schoolName: "College",
+  //     logo: "utsa-logo.png",
+  //     description: "Full athletic scholarship",
+  //   },
+  // ];
 
   return (
     <VStack
@@ -34,7 +34,32 @@ function Offers() {
         alignItems="center"
         width="100%"
       >
-        {offers.map((offer, index) => (
+        {/* Box for "No Scholarship Offers" */}
+        <MotionBox
+          w={{ base: '90%', md: '500px' }}
+          h="150px"
+          minW="320px"
+          m="5"
+          bgColor="#ebebeb"
+          bgImage="linear-gradient(-45deg, #ebebeb 25%, transparent 25%, transparent 50%, #ebebeb 50%, #ebebeb 75%, transparent 75%, transparent)"
+          bgSize="1px 1px"
+          borderRadius="12px"
+          borderWidth="5px"
+          borderColor="#228B22"
+          boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
+          p={4}
+          display="flex"
+          alignItems="center"
+          justifyContent="center" 
+          initial={{ scale: 0.9, opacity: 0.5 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 2, ease: 'easeOut' }}
+        >
+          <Text color="#38393d" fontWeight="bold" fontFamily="'Gentium Plus', serif" fontSize="lg">
+            No Scholarship Offers
+          </Text>
+        </MotionBox>
+        {/* {offers.map((offer, index) => (
           <MotionBox
             key={index}
             w={{ base: '90%', md: '500px' }}
@@ -72,7 +97,7 @@ function Offers() {
               </Text>
             </Box>
           </MotionBox>
-        ))}
+        ))} */}
       </Flex>
     </VStack>
   );
